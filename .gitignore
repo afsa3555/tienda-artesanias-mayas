@@ -1,0 +1,9 @@
+node_modules/
+vendor/
+.env
+*.log
+.DS_Store
+# Videos pesados (GitHub rechaza archivos de más de 100 MB)
+*.mp4
+*.mov
+*.mkv
