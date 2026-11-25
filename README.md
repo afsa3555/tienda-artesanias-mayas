@@ -16,7 +16,4 @@ Blender, model-viewer, A-Frame, Python + FFmpeg)
 ## Estructura
 - `/tienda`: aplicación web
 - `/modelos-3d`: archivos .blend y .glb
-- `/ar-vr`: escenas AR y VR
 - `/procesamiento-av`: scripts de audio y video
-- `/mercadotecnia`: plan, mapas y piezas de campaña
-- `/docs`: documentación, retrospectivas, bitácora de IA
