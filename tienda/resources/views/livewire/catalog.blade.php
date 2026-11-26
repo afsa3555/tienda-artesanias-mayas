@@ -35,9 +35,27 @@
 
     <div class="mt-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         @forelse ($products as $product)
-            <article class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
-                <div class="flex aspect-square items-center justify-center bg-stone-200 text-stone-500">
-                    Modelo 3D próximamente
+            <article wire:key="product-{{ $product->id }}"
+                     class="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+                <div class="aspect-square bg-stone-200">
+                    <model-viewer src="{{ asset($product->model_path) }}"
+                                  alt="Modelo 3D de {{ $product->name }}"
+                                  camera-controls
+                                  auto-rotate
+                                  touch-action="pan-y"
+                                  shadow-intensity="1"
+                                  ar
+                                  ar-modes="webxr scene-viewer quick-look"
+                                  style="width:100%;height:100%;">
+                        <div slot="poster"
+                             class="flex h-full w-full items-center justify-center bg-stone-200 text-stone-500">
+                            Cargando modelo 3D…
+                        </div>
+                        <button slot="ar-button" type="button"
+                                class="absolute bottom-3 right-3 rounded bg-amber-700 px-3 py-2 text-sm font-semibold text-white">
+                            Ver en mi espacio
+                        </button>
+                    </model-viewer>
                 </div>
                 <div class="p-4">
                     <p class="text-xs uppercase tracking-wide text-amber-700">{{ $product->category->name }}</p>
