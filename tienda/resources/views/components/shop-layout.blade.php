@@ -14,6 +14,7 @@
             <a href="/" class="text-xl font-bold text-amber-800">Artesanías Mayas</a>
             <nav class="flex gap-4 text-sm">
                 <a href="/" class="hover:text-amber-700">Catálogo</a>
+                <a href="/recorrido" class="hover:text-amber-700">Recorrido VR</a>
             </nav>
         </div>
     </header>
