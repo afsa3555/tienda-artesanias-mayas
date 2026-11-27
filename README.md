@@ -26,7 +26,7 @@ Los videos pesados (`.mp4`, `.mov`, `.mkv`) no se versionan; solo se incluye el 
 
 ## Tecnologías (versiones del entorno de desarrollo)
 
-- PHP 8.5.12 · Composer 2.11.1 · Laravel + Livewire · Vite + Tailwind CSS
+- PHP 8.5.12 · Composer 2.11.1 · Laravel 13.44.1 + Livewire 4.4.10 · Vite + Tailwind CSS
 - MySQL 8.4.9
 - Blender 5.3.0 (modelado, texturas y animación)
 - `<model-viewer>` (visor 3D y AR) · A-Frame 1.7.0 (VR)
