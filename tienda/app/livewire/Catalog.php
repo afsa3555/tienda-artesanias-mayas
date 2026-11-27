@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Support\Cart; 
 use Livewire\Component;
 
 class Catalog extends Component
@@ -15,6 +16,11 @@ class Catalog extends Component
     public function clearFilters(): void
     {
         $this->reset(['category', 'minPrice', 'maxPrice']);
+    }
+    public function addToCart(int $id): void
+    {
+        Cart::add($id);
+        $this->dispatch('cart-updated');
     }
 
     public function render()

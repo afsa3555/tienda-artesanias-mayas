@@ -15,7 +15,8 @@
             <nav class="flex gap-4 text-sm">
                 <a href="/" class="hover:text-amber-700">Catálogo</a>
                 <a href="/recorrido" class="hover:text-amber-700">Recorrido VR</a>
-            </nav>
+                <a href="/carrito" class="hover:text-amber-700">Carrito (<livewire:cart-counter />)</a>
+</nav>
         </div>
     </header>
 

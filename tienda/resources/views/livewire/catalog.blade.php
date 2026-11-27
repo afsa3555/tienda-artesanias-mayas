@@ -57,11 +57,15 @@
                         </button>
                     </model-viewer>
                 </div>
-                <div class="p-4">
+                 <div class="p-4">
                     <p class="text-xs uppercase tracking-wide text-amber-700">{{ $product->category->name }}</p>
                     <h2 class="mt-1 text-lg font-semibold">{{ $product->name }}</h2>
                     <p class="mt-1 text-sm text-stone-600">{{ $product->description }}</p>
                     <p class="mt-3 text-xl font-bold">${{ number_format($product->price, 2) }} MXN</p>
+                    <button wire:click="addToCart({{ $product->id }})" type="button"
+                            class="mt-3 w-full rounded bg-amber-800 py-2 text-white hover:bg-amber-700">
+                        Agregar al carrito
+                    </button>
                 </div>
             </article>
         @empty
