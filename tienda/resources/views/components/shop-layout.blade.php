@@ -25,7 +25,7 @@
     </main>
 
     <footer class="mt-12 border-t border-stone-200 py-6 text-center text-sm text-stone-500">
-        Proyecto Integrador · Universidad Politécnica de Quintana Roo
+        
     </footer>
 
     @livewireScripts

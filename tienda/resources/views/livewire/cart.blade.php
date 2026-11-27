@@ -25,7 +25,7 @@
 
         <div class="flex justify-between items-center mt-6">
             <p class="text-2xl font-bold">Total: ${{ number_format($total, 2) }} MXN</p>
-            <a href="#" class="bg-amber-800 text-white px-6 py-2 rounded">Continuar al pago</a>
+            <a href="{{ route('checkout') }}" class="bg-amber-800 text-white px-6 py-2 rounded">Continuar al pago</a>
         </div>
     @endif
 </div>
