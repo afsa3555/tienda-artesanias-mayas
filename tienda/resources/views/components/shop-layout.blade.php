@@ -1,4 +1,4 @@
-@props(['title' => 'Inicio'])
+@props(['title' => 'Inicio', 'admin' => false])
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,15 +10,19 @@
 </head>
 <body class="bg-stone-50 text-stone-800">
     <header class="border-b border-stone-200 bg-white">
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        @if ($admin)
+            <span class="text-xl font-bold text-amber-800">Artesanías Mayas · Administración</span>
+        @else
             <a href="/" class="text-xl font-bold text-amber-800">Artesanías Mayas</a>
             <nav class="flex gap-4 text-sm">
                 <a href="/" class="hover:text-amber-700">Catálogo</a>
                 <a href="/recorrido" class="hover:text-amber-700">Recorrido VR</a>
                 <a href="/carrito" class="hover:text-amber-700">Carrito (<livewire:cart-counter />)</a>
-</nav>
-        </div>
-    </header>
+            </nav>
+        @endif
+    </div>
+</header>
 
     <main class="mx-auto max-w-6xl px-4 py-8">
         {{ $slot }}

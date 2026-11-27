@@ -1,4 +1,4 @@
-<x-shop-layout title="Pedidos">
+<x-shop-layout title="Pedidos" :admin="true">
     <div class="flex items-center justify-between">
         <h1 class="text-3xl font-bold">Panel de pedidos</h1>
         <form method="POST" action="{{ route('admin.logout') }}">

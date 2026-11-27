@@ -1,4 +1,4 @@
-<x-shop-layout title="Acceso administrador">
+<x-shop-layout title="Acceso administrador" :admin="true">
     <div class="mx-auto max-w-sm">
         <h1 class="text-2xl font-bold">Acceso administrador</h1>
         <form method="POST" action="{{ route('admin.login.store') }}" class="mt-6 space-y-4">
