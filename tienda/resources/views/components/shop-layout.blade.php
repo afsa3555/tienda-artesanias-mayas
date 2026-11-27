@@ -19,6 +19,7 @@
                 <a href="/" class="hover:text-amber-700">Catálogo</a>
                 <a href="/recorrido" class="hover:text-amber-700">Recorrido VR</a>
                 <a href="/carrito" class="hover:text-amber-700">Carrito (<livewire:cart-counter />)</a>
+                <a href="/promocional" class="hover:text-amber-700">Video</a>
             </nav>
         @endif
     </div>

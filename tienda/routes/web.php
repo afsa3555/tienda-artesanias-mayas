@@ -18,4 +18,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/pedidos', [AdminController::class, 'pedidos'])->name('admin.pedidos');
     Route::post('/admin/pedidos/{order}/estado', [AdminController::class, 'estado'])->name('admin.estado');
     Route::post('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
-});
+    });
+
+Route::view('/promocional', 'promocional')->name('promocional');
